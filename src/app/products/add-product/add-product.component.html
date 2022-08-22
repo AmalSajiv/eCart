@@ -1,0 +1,62 @@
+<h2 class="text-center">Add New Product Details</h2>
+<form [formGroup]="addProductForm" class="row g-3" (ngSubmit)="addProduct()">
+    <div class="col-md-6">
+        <label for="validationserver01" class="form-label">Product Id</label>
+        <input type="text" name="id" formControlName="id" class="form-control" id="validationserver01" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver02" class="form-label">Product Name</label>
+        <input type="text" name="productName" formControlName="productName" class="form-control" id="validationserver02" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver03" class="form-label">Product Description</label>
+        <input type="text" name="description" formControlName="description" class="form-control" id="validationserver03" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver04" class="form-label">Product Rating</label>
+        <input type="text" name="rating" formControlName="rating" class="form-control" id="validationserver04" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver05" class="form-label">Product Price</label>
+        <input type="text" name="price" formControlName="price" class="form-control" id="validationserver05" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver06" class="form-label">Product Warrenty</label>
+        <input type="text" name="warrenty" formControlName="warrenty" class="form-control" id="validationserver06" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver07" class="form-label">Product Review</label>
+        <input type="text" name="review" formControlName="review" class="form-control" id="validationserver07" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver08" class="form-label">Product Vendor Name</label>
+        <input type="text" name="vendor_name" formControlName="vendor_name" class="form-control" id="validationserver08" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver09" class="form-label">Product Category Id</label>
+        <input type="text" name="categoryId" formControlName="categoryId" class="form-control" id="validationserver09" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver10" class="form-label">Product Availability</label>
+        <input type="text" placeholder="Yes / No" name="is_available" formControlName="is_available" class="form-control" id="validationserver01" required>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationserver11" class="form-label">Product Image</label>
+        <input type="text" placeholder="type file name" name="productImg" formControlName="productImg" class="form-control" id="validationserver01" required>
+    </div>
+
+    <div class="col-12">
+       <button class="btn btn-outline-primary" type="submit">Submit Form</button>
+    </div>
+
+</form>
